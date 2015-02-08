@@ -1,0 +1,96 @@
+{% block content %}
+<div class="row">
+<div class="large-12 columns">
+<h1 class="text-center">Orbit Slider</h1>
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<ul class="example-orbit" data-orbit>
+<li>
+{{ 'gal1.png' | asset_url | image_tag }}
+<div class="orbit-caption">
+Caption One.
+</div>
+</li>
+<li class="active">
+{{ 'gal2.jpg' | asset_url | image_tag }}
+<div class="orbit-caption">
+Caption Two.
+</div>
+</li>
+<li>
+{{ 'gal3.png' | asset_url | image_tag }}
+<div class="orbit-caption">
+Caption Three.
+</div>
+</li>
+<li>
+{{ 'gal4.jpg' | asset_url | image_tag }}
+<div class="orbit-caption">
+Caption Four.
+</div>
+</li>
+<li>
+{{ 'gal5.jpg' | asset_url | image_tag }}
+<div class="orbit-caption">
+Caption Five.
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="large-8 columns">
+<h1>Heading</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a massa mi. Duis sed urna in ex pulvinar tincidunt nec at lectus. Donec facilisis nibh non cursus cursus. Quisque at quam efficitur, accumsan ex dapibus, ullamcorper magna. Nam id nisi in ex posuere tristique pellentesque in neque. Nullam finibus, ipsum vulputate maximus pretium, enim risus commodo massa, non faucibus nisl enim et leo. Morbi accumsan auctor orci, quis porttitor quam rhoncus sed.
+</p>
+<p>
+Aliquam pellentesque ornare suscipit. Aliquam pulvinar nulla ante, eu lobortis elit venenatis at. Proin ornare, enim quis sagittis congue, turpis nunc bibendum velit, vitae tincidunt lorem tortor et libero. In euismod gravida libero, quis tristique diam gravida ac. In hac habitasse platea dictumst. Curabitur rhoncus, ligula tristique consequat semper, augue justo molestie risus, sed auctor odio orci sit amet quam. Cras quam mi, semper a libero eget, maximus facilisis tellus. Pellentesque nec velit velit. Curabitur lacus leo, imperdiet sed posuere at, lobortis ut nunc. Nunc rutrum leo in blandit aliquam. Proin eget nisl id nibh tristique fringilla. Donec sed tellus eleifend, sagittis enim pulvinar, pulvinar nulla. Etiam porta blandit convallis. Sed lacinia sagittis convallis.
+</p>
+<p>
+Donec vitae lorem erat. Vestibulum non arcu vel orci placerat gravida. Fusce id auctor dui, ac gravida sem. Aenean ipsum libero, bibendum vitae viverra aliquam, gravida non lacus. Praesent sagittis condimentum urna, ornare facilisis erat tempus at. Ut viverra eros mi, sed tempus turpis sagittis eget. Quisque laoreet ut metus quis sagittis. Maecenas id sagittis enim. Sed eros nulla, facilisis at mattis pulvinar, aliquam sed nunc. Nam sollicitudin sem in lectus suscipit, non blandit sapien consectetur. Proin egestas ultricies odio eu luctus. Sed ullamcorper, ante id tempus malesuada, erat dolor maximus eros, ut imperdiet dui erat at justo. Nam quis porta tortor. Praesent efficitur magna non tellus iaculis pretium. Sed iaculis, nisi vitae blandit vestibulum, est sapien pharetra mauris, non sollicitudin nunc quam vel ex.
+</p>
+</div>
+<div class="large-4 columns">
+<div class="panel">
+<h2 class="text-center">Ads</h2><br/>
+<ul class="example-orbit-content" data-orbit
+data-options="animation:slide;
+pause_on_hover:true;
+animation_speed:400;
+timer_speed: 2000;
+navigation_arrows:false;
+bullets:false;
+slide_number: false;
+resume_on_mouseout: true;"
+>
+<li data-orbit-slide="headline-1">
+<div>
+<h3>Ad 1</h3>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a massa mi. Duis sed urna in ex pulvinar tincidunt nec at lectus. Donec facilisis nibh non cursus cursus.
+</p>
+</div>
+</li>
+<li data-orbit-slide="headline-2">
+<div>
+<h3>Ad 2</h3>
+<p>
+Aliquam pellentesque ornare suscipit. Aliquam pulvinar nulla ante, eu lobortis elit venenatis at. Proin ornare, enim quis sagittis congue, turpis nunc bibendum velit, vitae tincidunt lorem tortor et libero.
+</p>
+</div>
+</li>
+<li data-orbit-slide="headline-3">
+<div>
+<h3>Ad 3</h3>
+<p>
+Donec vitae lorem erat. Vestibulum non arcu vel orci placerat gravida. Fusce id auctor dui, ac gravida sem. Aenean ipsum libero, bibendum vitae viverra aliquam, gravida non lacus.
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+{% endblock %}

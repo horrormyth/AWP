@@ -1,0 +1,18 @@
+{% block content %}
+<div class="row">
+<div class="large-12 columns">
+<h1 class="text-center">Gallery</h1>
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<ul class="clearing-thumbs small-block-grid-3" data-clearing>
+<li><a class="th" href="{{ 'gal1.png' | asset_url }}">{{ 'gal1_th.jpg' | asset_url | image_tag }}</a></li>
+<li><a class="th" href="{{ 'gal2.jpg' | asset_url }}">{{ 'gal2_th.jpg' | asset_url | image_tag }}</a></li>
+<li><a class="th" href="{{ 'gal3.png' | asset_url }}">{{ 'gal3_th.jpg' | asset_url | image_tag }}</a></li>
+<li><a class="th" href="{{ 'gal4.jpg' | asset_url }}">{{ 'gal4_th.jpg' | asset_url | image_tag }}</a></li>
+<li><a class="th" href="{{ 'gal5.jpg' | asset_url }}">{{ 'gal5_th.jpg' | asset_url | image_tag }}</a></li>
+</ul>
+</div>
+</div>
+{% endblock %}
