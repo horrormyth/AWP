@@ -1,0 +1,40 @@
+{% block content %}
+
+<!-- TODO: Make the 'home' page the top part is similar to 'Workspace' template: http://foundation.zurb.com/templates.html -->
+<!-- TODO: Make the other templates(Orbit, Gallery and Slider) in similar manner as this file. -->
+
+<div class="row">
+    <div class="large-12 columns">
+		<!-- TODO: Use liquid syntax to add the 'front.jpg': http://docs.mixture.io/templates -->
+        <div id="featured">{{ 'front.jpg' | asset_url | image_tag }}</div>
+    </div>
+</div>
+
+<div class="row">
+
+
+    <div class="large-8 columns">
+        <h1>Heading</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a massa mi. Duis sed urna in ex pulvinar tincidunt nec at lectus. Donec facilisis nibh non cursus cursus. Quisque at quam efficitur, accumsan ex dapibus, ullamcorper magna. Nam id nisi in ex posuere tristique pellentesque in neque. Nullam finibus, ipsum vulputate maximus pretium, enim risus commodo massa, non faucibus nisl enim et leo. Morbi accumsan auctor orci, quis porttitor quam rhoncus sed.
+		</p>
+		<p>
+			Aliquam pellentesque ornare suscipit. Aliquam pulvinar nulla ante, eu lobortis elit venenatis at. Proin ornare, enim quis sagittis congue, turpis nunc bibendum velit, vitae tincidunt lorem tortor et libero. In euismod gravida libero, quis tristique diam gravida ac. In hac habitasse platea dictumst. Curabitur rhoncus, ligula tristique consequat semper, augue justo molestie risus, sed auctor odio orci sit amet quam. Cras quam mi, semper a libero eget, maximus facilisis tellus. Pellentesque nec velit velit. Curabitur lacus leo, imperdiet sed posuere at, lobortis ut nunc. Nunc rutrum leo in blandit aliquam. Proin eget nisl id nibh tristique fringilla. Donec sed tellus eleifend, sagittis enim pulvinar, pulvinar nulla. Etiam porta blandit convallis. Sed lacinia sagittis convallis.
+		</p>
+		<p>
+			Donec vitae lorem erat. Vestibulum non arcu vel orci placerat gravida. Fusce id auctor dui, ac gravida sem. Aenean ipsum libero, bibendum vitae viverra aliquam, gravida non lacus. Praesent sagittis condimentum urna, ornare facilisis erat tempus at. Ut viverra eros mi, sed tempus turpis sagittis eget. Quisque laoreet ut metus quis sagittis. Maecenas id sagittis enim. Sed eros nulla, facilisis at mattis pulvinar, aliquam sed nunc. Nam sollicitudin sem in lectus suscipit, non blandit sapien consectetur. Proin egestas ultricies odio eu luctus. Sed ullamcorper, ante id tempus malesuada, erat dolor maximus eros, ut imperdiet dui erat at justo. Nam quis porta tortor. Praesent efficitur magna non tellus iaculis pretium. Sed iaculis, nisi vitae blandit vestibulum, est sapien pharetra mauris, non sollicitudin nunc quam vel ex.
+		</p>
+    </div>
+
+    <div class="large-4 columns">
+		<p class="panel">
+			Nam maximus purus metus, ac scelerisque sem tempus sed. Integer imperdiet diam ut purus iaculis, sed laoreet nisl porta. Pellentesque lacinia velit lorem, et ultricies mauris fermentum vel. Donec lacus leo, sollicitudin et pharetra et, placerat sit amet ligula. Nullam vitae magna viverra, condimentum justo vel, maximus quam. Fusce eget velit eleifend, mattis metus ut, congue nulla. Aenean fermentum sem sit amet diam tincidunt, sollicitudin eleifend lectus dignissim. Vestibulum nec nisi commodo, laoreet ipsum ac, sodales nulla. Integer enim ipsum, congue id faucibus at, commodo eu dui. Proin porttitor enim sit amet sagittis lacinia. Pellentesque mattis, dolor vel blandit gravida, augue erat tristique mauris, nec varius quam nisl pharetra velit. Praesent consequat pharetra tortor, id fringilla quam rhoncus ac.
+		</p>
+    </div>
+
+</div>
+<div class ="rows">
+
+</div>
+
+{% endblock %}

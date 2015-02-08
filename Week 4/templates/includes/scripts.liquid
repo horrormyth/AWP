@@ -1,0 +1,13 @@
+{{ "/assets/js/jquery.js" | asset_url | script_tag }}
+{{ "/assets/js/foundation.orbit.js" | asset_url | script_tag }}
+{{ "/assets/js/foundation.js" | asset_url | script_tag }}
+{{ "//cdn.jsdelivr.net/jquery.slick/1.4.0/slick.min.js" | script_tag }}
+<script>
+$(document).foundation({
+slider: {
+on_change: function(){
+$('#slided').css('width', $('#slider').attr('data-slider') + '%');
+}
+}
+});
+</script>
